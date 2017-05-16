@@ -10,6 +10,7 @@ import edu.feicui.daynews.R;
 
 /**
  * Created by Administrator on 16-10-10.
+ * 测试用的activity
  */
 public class AActivity extends Activity  {
     LinearLayout mLinearLayout;
