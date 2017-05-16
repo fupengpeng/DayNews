@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@mipmap/center_top_bg"
+        android:padding="5dp"
+        android:id="@+id/rl_activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="132dp">
+        <ImageView
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_activity_account_my_portrait"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/center_top_bg"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_activity_account_my_nickname"
+            android:layout_toRightOf="@id/iv_activity_account_my_portrait"
+            android:layout_alignTop="@id/iv_activity_account_my_portrait"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="昵称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_activity_account_my_integral"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignBottom="@id/iv_activity_account_my_portrait"
+            android:layout_toRightOf="@id/iv_activity_account_my_portrait"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="积分："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/tv_activity_account_my_comment"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="跟帖数统计："
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_activity_account_my_log"
+                android:layout_margin="10dp"
+                android:text="登录日志"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_activity_account_my_log"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/btn_activity_account_my_quit"
+            android:background="#AA1122"
+            android:textColor="#ffffff"
+            android:text="退出登录"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0.04" />
+
+    </LinearLayout>
+
+</LinearLayout>

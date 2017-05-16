@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_home_news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <Button
+                android:background="@drawable/selector_news_classify_background"
+                android:id="@+id/btn_home_society"
+                android:layout_marginLeft="10dp"
+                android:text="社会"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <Button
+                android:background="@drawable/selector_news_classify_background"
+                android:id="@+id/btn_home_military"
+                android:layout_marginLeft="10dp"
+                android:text="军事"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <Button
+                android:background="@drawable/selector_news_classify_background"
+                android:id="@+id/btn_home_stock"
+                android:layout_marginLeft="10dp"
+                android:text="股票"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <Button
+                android:background="@drawable/selector_news_classify_background"
+                android:id="@+id/btn_home_fund"
+                android:layout_marginLeft="10dp"
+                android:text="基金"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <Button
+                android:background="@drawable/selector_news_classify_background"
+                android:id="@+id/btn_home_phone"
+                android:layout_marginLeft="10dp"
+                android:text="手机"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <Button
+                android:background="@drawable/selector_news_classify_background"
+                android:id="@+id/btn_home_epl"
+                android:layout_marginLeft="10dp"
+                android:text="英超"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <Button
+                android:background="@drawable/selector_news_classify_background"
+                android:id="@+id/btn_home_nba"
+                android:layout_marginLeft="10dp"
+                android:text="NBA"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:id="@+id/iv_home_unfold"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/typemore_normal"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            </LinearLayout>
+    <edu.feicui.daynews.view.XListView
+        android:id="@+id/xlv_fragment_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

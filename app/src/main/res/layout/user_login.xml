@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_login_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--android:inputType="" 限制输入的是字符串  数字等-->
+        <android.support.design.widget.TextInputEditText
+
+            android:id="@+id/tiet_login_account"
+            android:hint="account"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tiet_login_password"
+            android:hint="password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>

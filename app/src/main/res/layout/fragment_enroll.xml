@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_right_login_enroll_emill"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:paddingLeft="5dp"
+            android:background="@drawable/selector_text_border"
+            android:id="@+id/tiet_right_login_enroll_emill"
+            android:hint="请输入邮箱地址"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_right_login_enroll_nickname"
+        android:background="#FFF7F8F9"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:paddingLeft="5dp"
+            android:background="@drawable/selector_text_border"
+            android:id="@+id/tiet_right_login_enroll_nickname"
+            android:hint="请输入昵称"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_right_login_enroll_password"
+        android:background="#FFF7F8F9"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:background="@drawable/selector_text_border"
+            android:id="@+id/tiet_right_login_enroll_password"
+            android:paddingLeft="5dp"
+            android:hint="密码：6到16位字符"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_right_login_enroll_enroll"
+            android:layout_margin="1dp"
+            android:background="@color/red"
+            android:textColor="#ffffff"
+            android:text="立即注册"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+     <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <CheckBox
+             android:id="@+id/ch_right_login_enroll"
+             android:layout_width="45dp"
+             android:layout_height="45dp" />
+         <TextView
+             android:text="我同意“服务条款”和“网络用户隐私保护和个人信息利用政策”"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+     </LinearLayout>
+</LinearLayout>
